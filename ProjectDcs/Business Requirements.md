@@ -141,7 +141,7 @@ This module provides:
 
 ### 5.1 Primary Tables
 
-#### `fa_forms`
+#### `ksf_forms`
 Stores form definitions.
 
 | Column | Type | Description |
@@ -155,7 +155,7 @@ Stores form definitions.
 | `created_at` | TIMESTAMP | Creation timestamp |
 | `updated_at` | TIMESTAMP | Last update timestamp |
 
-#### `fa_form_submissions`
+#### `ksf_forms_submissions`
 Stores form submission data.
 
 | Column | Type | Description |

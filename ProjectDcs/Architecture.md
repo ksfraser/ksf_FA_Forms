@@ -99,7 +99,7 @@ ksf_FA_Forms/
 
 ```
 ┌─────────────────────┐         ┌─────────────────────────┐
-│      fa_forms       │         │  fa_form_submissions    │
+│      ksf_forms       │         │  ksf_forms_submissions    │
 ├─────────────────────┤         ├─────────────────────────┤
 │ PK id               │──────┐  │ PK id                   │
 │    name             │      │  │ FK form_id         ─────┘
@@ -187,7 +187,7 @@ ksf_FA_Forms/
 
 ```php
 class hooks_fa_forms extends hooks {
-    var $module_name = 'fa_forms';
+    var $module_name = 'ksf_forms';
     
     function install_options($app) {
         switch($app->id) {
@@ -231,8 +231,8 @@ function activate_extension($company, $check_only=true) {
 }
 
 private function ensure_forms_schema() {
-    // fa_forms - Form definitions
-    // fa_form_submissions - Submission data
+    // ksf_forms - Form definitions
+    // ksf_forms_submissions - Submission data
 }
 ```
 
@@ -279,7 +279,7 @@ Provides submission management:
    a. Check required
    b. Validate format
    c. Check length
-3. If valid, save to fa_form_submissions
+3. If valid, save to ksf_forms_submissions
 4. Return success/error
 ```
 
