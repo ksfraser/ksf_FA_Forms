@@ -24,5 +24,3 @@ CREATE TABLE IF NOT EXISTS `0_ksf_forms_submissions` (
     PRIMARY KEY (`id`),
     KEY `form_id` (`form_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-INSERT INTO `0_ksf_modules` (`name`, `version`, `enabled`, `installed`) VALUES ('Forms', '1.0.0', 1, NOW()) ON DUPLICATE KEY UPDATE `version` = '1.0.0';
